@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "KomarovTasks"
+version = "1.0.0"
+description = "Django_tasks"
+authors = ["VintlGvard"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+django = "^4.2"
+djangorestframework = "^3.14"
+django-crispy-forms = "^2.3"
+django-filter = "^23.2"
+django-extensions = "^3.2"
+python-dotenv = "^1.0"
+channels = "^4.0"
+channels-redis = "^4.1"
+redis = "^5.0"
+requests = "^2.31"
+social-auth-app-django = "^5.4.2"
+django-taggit = "^6.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^23.9"
+isort = "^5.12"
+flake8 = "^6.1"
+pytest = "^7.4"
+pytest-django = "^4.5"
+
+[tool.poetry.scripts]
+manage = "django_project.manage:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
